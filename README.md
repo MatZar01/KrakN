@@ -137,7 +137,7 @@ by:
 
 **Mateusz Żarski, MSc.**[^1]
 
-**Bartosz Wójcik, MSc.**[^1]
+**Bartosz Wójcik, MSc.**
 
 [^1]:**The Silesian Technical University**
 
