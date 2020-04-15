@@ -139,7 +139,7 @@ by:
 
 **Bartosz Wójcik, MSc.**
 
-[^1]: **The Silesian Technical University**
+**The Silesian Technical University**
 
 [ResearchGate link](https://researchgate.net)
 
