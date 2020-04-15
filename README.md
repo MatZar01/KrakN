@@ -135,17 +135,15 @@ KrakN is associated with research paper:
 
 by:
 
-**Mateusz Żarski, MSc.**<sup>[1](#myfootnote1)</sup>
+**Mateusz Żarski, MSc.**<sup>[1](#footnote1)</sup>
 
-**Bartosz Wójcik, MSc.**<sup>1</sup>
+**Bartosz Wójcik, MSc.**<sup>[1](#footnote1)</sup>
 
-**Jarosław Adam Miszczak**<sup>2</sup>
+**Jarosław Adam Miszczak**<sup>[2](#footnote2)</sup>
 
-<a name="myfootnote1">1</a>: **The Silesian Technical University**
+<a name="footnote1">1</a>: **The Silesian Technical University**
 
-[1]: **The Silesian Technical University**
-
-[2]: **Polish Academy of Sciences**
+<a name="footnote2">2</a>: **Polish Academy of Sciences**
 
 [ResearchGate link](https://researchgate.net)
 
