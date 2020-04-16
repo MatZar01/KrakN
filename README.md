@@ -1,5 +1,8 @@
 # KrakN
-![](https://i.ibb.co/mySWggD/Krak-N-ico-res.png)
+
+<p align="center">
+  <https://i.ibb.co/mySWggD/Krak-N-ico-res.png />
+</p>
 
 >**KrakN is an Artificial Intelligence framework for supporting infrastructure maintenance. It provides tools for an easy, end-to-end approach to dataset building, training, and deploying CNN models for image defect detecting on infrastructure facilities for infrastructure management units. KrakN is free to use, and it is distributed under open source license.**
 
@@ -93,7 +96,7 @@ Use trackbars to navigate image.
 
 ![](https://i.ibb.co/ZTL1H7H/3s.png)
 
-There is no limitation on the number of datapoints extracted from one image.
+There is no limitation to the number of datapoints extracted from one image.
 
 Dataset classes should be balanced and consist of at least 500 datapoints per class.
 
