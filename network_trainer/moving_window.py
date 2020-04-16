@@ -101,10 +101,6 @@ for imagePath in imagePaths:
     imageCV = cv2.imread(imagePath)
     (h, w) = imageCV.shape[:2]
 
-    # get image format length
-    image_name = imagePath.split('.')[-1]
-    image_format_len = len(image_format + 1)
-
     # add mask images
     maskList = []
     for label in labels:
@@ -171,12 +167,12 @@ for imagePath in imagePaths:
                 yTop = h - windowSize - 1
             else:
                 for i in range(0, len(labels)):
-                    cv2.imwrite(maskDir + os.path.sep + imagePath.split(os.path.sep)[-1][:-1*image_format_len] + '_' + labels[i] + "_mask" + ".png", maskList[i])
+                    cv2.imwrite(maskDir + os.path.sep + imagePath.split(os.path.sep)[-1].split('.')[0] + '_' + labels[i] + "_mask" + ".png", maskList[i])
                 print("All parts complete!")
                 break
 
     print("Exporting original image...")
-    cv2.imwrite(imageDir + os.path.sep + imagePath.split(os.path.sep)[-1][:-1*image_format_len] + '_' + labels[i] + "_orig" + ".png", imageCV)
+    cv2.imwrite(imageDir + os.path.sep + imagePath.split(os.path.sep)[-1].split('.')[0] + '_' + labels[i] + "_orig" + ".png", imageCV)
     print("Saving {} masked images".format(len(labels)))
 
     # add bounding boxes to input image
@@ -191,5 +187,5 @@ for imagePath in imagePaths:
             cv2.rectangle(outputImage, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
         # write output image
-        cv2.imwrite(outputPathDir + os.path.sep + imagePath.split(os.path.sep)[-1][:-1*image_format_len] + '_' + labels[i] + "_out" + ".png", outputImage)
+        cv2.imwrite(outputPathDir + os.path.sep + imagePath.split(os.path.sep)[-1].split('.')[0] + '_' + labels[i] + "_out" + ".png", outputImage)
         print("{} of {} images done!".format(i, len(labels)))
