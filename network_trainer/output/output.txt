@@ -1,0 +1,1 @@
+This directory will contain your classified images, where the defects will be marked with bounding boxes.
