@@ -68,7 +68,7 @@ conda env create -f krakn.yml
 ## Usage
 
 ### 1. Dataset Building
-In order to build dataset, first create directories with names corresponding to desired classifier classes in `KrakN/dataset_builder/datapoints`. Then add images you want to extract dataset from to `KrakN/dataset_builder/database/Images`. Finally, use `dataset_builder.py` or `dataset_builder.exe` in `KrakN/dataset_builder` to extract labeled datapoints from images.
+In order to build dataset, first create directories with names corresponding to desired classifier classes in `KrakN/dataset_builder/datapoints`. Adding each new folder is equivalent in adding new class to the desired classifier. There can be total of 9 folders in `KrakN/dataset_builder/datapoints` per script run. Next add images you want to extract dataset from to `KrakN/dataset_builder/database/Images`. Finally, use `dataset_builder.py` or `dataset_builder.exe` in `KrakN/dataset_builder` to extract labeled datapoints from images.
 
 #### Datapoints extraction:
 
