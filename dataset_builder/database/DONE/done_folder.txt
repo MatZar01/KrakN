@@ -1,0 +1,1 @@
+This directory will contain already processed images so you don't have to worry about loosing your data.
