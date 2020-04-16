@@ -130,14 +130,12 @@ For greater performance, Google Colab service can also be used.
 #### Examples below demonstrate classifications obtained using KrakN:
 
 <img src="https://i.ibb.co/8bL6B9G/out1.png" alt="drawing" width="640" height="230"/>
-
-![](https://i.ibb.co/8bL6B9G/out1.png =640x230)
 >A fragment of KrakN output of concrete wall 120MP orthomosaic. Second image in row is the defect mask to use for damage management. On the last image, the defects are marked with bounding boxes. The width of defects is below 0,2mm.
 
-![](https://i.ibb.co/NZcxLY5/out2.png =640x230)
+<img src="https://i.ibb.co/NZcxLY5/out2.png" alt="drawing" width="640" height="230"/>
 >Another example of KrakN use - note false positive marking in the top right corner.
 
-![](https://i.ibb.co/VvpxLs4/out3.png =640x230)
+<img src="https://i.ibb.co/VvpxLs4/out3.png" alt="drawing" width="640" height="230"/>
 >An example of KrakN usage on clean, painted surface it was not trained on - note false negative predictions on the image.
 
 As seen in the examples KrakN performance may vary due to the dataset it was trained on. To maintain high performance in defect detection, use diverse datasets for training. Further fine tunning in KrakN performance can be done by manipulating `confidence_threshold` parameter in `moving_window.py` for lowering false negative predictions.
