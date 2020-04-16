@@ -2,6 +2,9 @@
 try:
     import platform
     import os
+    
+    import warnings
+    warnings.simplefilter(action='ignore', category=FutureWarning)
 
     import sys
     sys.path.append('.{}utilities{}io'.format(os.path.sep, os.path.sep))
