@@ -1,4 +1,4 @@
-# KrakN
+<div align="center"> # KrakN </div>
 
 <p align="center">
   <img src="https://i.ibb.co/mySWggD/Krak-N-ico-res.png" alt="KrakN project logo"/>
