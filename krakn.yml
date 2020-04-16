@@ -81,12 +81,14 @@ dependencies:
   - ncurses=6.1=hf484d3e_1002
   - nettle=3.4.1=h1bed415_1002
   - numpy=1.16.2=py36_blas_openblash1522bff_0
+  - olefile=0.46=py_0
   - openblas=0.3.3=h9ac9557_1001
   - opencv=4.0.0=py36_blas_openblash26fe798_200
   - openh264=1.8.0=hdbcaa40_1000
   - openssl=1.0.2u=h516909a_0
   - pango=1.42.4=h7062337_4
   - pcre=8.44=he1b5a44_0
+  - pillow=7.1.1=py36h8328e55_0
   - pip=20.0.2=py_2
   - pixman=0.38.0=h516909a_1003
   - progressbar=2.5=py_0

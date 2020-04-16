@@ -40,6 +40,7 @@ KrakeN was developed using Python 3.6. It can be used on Microsoft Windows as we
 * H5Py >= 2.9.0
 * Progressbar >= 2.5
 * Imutils >= 0.5.2
+* Pillow >= 7.1.1
 * PyGame >= 1.9.6
 
 ### Setup
