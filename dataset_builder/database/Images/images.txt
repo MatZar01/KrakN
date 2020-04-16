@@ -1,0 +1,3 @@
+This directory should contain your image files, you wish to be cropped and added to your dataset.
+See 3 example images and crop defects from them using 'dataset_builder.py'.
+The cropped images will be stored at './dataset_builder/datapoints'
