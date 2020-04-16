@@ -40,7 +40,7 @@ while True:
 outputPath = r".{}database".format(os.path.sep)
 if not os.path.exists(outputPath):
     os.mkdir('.{}database'.format(os.path.sep))
-batchSize = 256
+batchSize = 32
 bufferSize = 1000
 
 # load images and shuffle them
