@@ -143,12 +143,10 @@ As seen in the examples KrakN performance may vary due to the dataset it was tra
 
 KrakN is associated with research paper:
 
-**Mateusz Żarski, MSc**<sup>[1](#footnote1)</sup>, **Bartosz Wójcik, MSc**<sup>[1](#footnote1)</sup>, **Jarosław Adam Miszczak, PhD**<sup>[2](#footnote2)</sup>, ***Transfer Learning for leveraging the utilization of computer vision for infrastructure maintenance***
+Mateusz Żarski<sup>[1](#footnote1)</sup>, Bartosz Wójcik<sup>[1](#footnote1)</sup>, Jarosław Adam Miszczak<sup>[2](#footnote2)</sup>, *Transfer Learning for leveraging the utilization of computer vision for infrastructure maintenance*, [ResearchGate link](https://researchgate.net) 
 
 <a name="footnote1"><sup>1</sup></a>Department of Civil Engineering, Silesian University of Technology
 <a name="footnote2"><sup>2</sup></a>Institute of Theoretical and Applied Informatics, Polish Academy of Sciences
-
-[ResearchGate link](https://researchgate.net)
 
 KrakN is free to use under [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
 
