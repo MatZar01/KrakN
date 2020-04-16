@@ -1,0 +1,1 @@
+This directory will contain unclassified images for further processing with corresponding mask from 'Masks' folder.
