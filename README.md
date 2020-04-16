@@ -1,7 +1,7 @@
 # KrakN
 
 <p align="center">
-  <https://i.ibb.co/mySWggD/Krak-N-ico-res.png />
+  <img src="https://i.ibb.co/mySWggD/Krak-N-ico-res.png" alt="KrakN project logo"/>
 </p>
 
 >**KrakN is an Artificial Intelligence framework for supporting infrastructure maintenance. It provides tools for an easy, end-to-end approach to dataset building, training, and deploying CNN models for image defect detecting on infrastructure facilities for infrastructure management units. KrakN is free to use, and it is distributed under open source license.**
