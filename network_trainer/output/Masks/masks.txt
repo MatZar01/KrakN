@@ -1,0 +1,2 @@
+This directory will contain defect masks for images in 'Images" folder.
+Together, this files can be used for defect management or further stage classification. 
