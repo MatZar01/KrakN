@@ -107,11 +107,11 @@ With first use of the feature extractor, a VGG16 headless CNN model trained on I
 
 This process can also be done with `extract_features.py` provided in `KrakN/network_trainer_Colab` for greater performance with use of [Google Colab](https://colab.research.google.com) cloud computing service. However, in order to do that, your dataset has to be present on your Google Drive.
 
-After feature extraction, your dataset will be saved in `KrakN/network_trainer/dataset` as `features_s_<zoom factor>.hdf5` file.
+After feature extraction, your dataset will be saved in `KrakN/network_trainer/database` as `features_s_<zoom factor>.hdf5` file.
 
 ### 3. Network training
 
-In order to train network run `train_model.py` or `train_model.exe`. It will automatically load your dataset if provided correctly and tune training hyperparameters. Total training time should not exceed 1 hour and the trained classifier will be saved as `KrakN.cpickle` in the `KrakN/network_trainer` directory.
+In order to train network run `train_model.py` or `train_model.exe`. It will automatically load your dataset if provided correctly and tune training hyperparameters. Total training time should not exceed 1 hour and the trained classifier will be saved as `KrakN_model.cpickle` in the `KrakN/network_trainer` directory.
 
 **After training the model, points 1 to 3 will not have to be repeated unless you will need to add new classes to the classifier.** Trained models can also be shared across working stations.
 
