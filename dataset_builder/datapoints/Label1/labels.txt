@@ -1,0 +1,3 @@
+Folders in 'datapoints' directory will be loaded by 'dataset_builder.py' and serve as labels for your datapoints.
+You can add up to 9 Labels folders per run.
+Name them accordingly to the class of defect (eg. 'Crack', 'Spalling' etc.).
