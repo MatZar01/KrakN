@@ -178,12 +178,14 @@ for path in imagePaths:
                 for i in range(0, len(class_list)):
                     if key == KEYS_IDS[i]:
                         # check if file exists
-                        output_path = DATAPOINTS_STRING + class_list[i] + os_separator + class_list[i] + "_" +\
-                                      str(FRAME_ITERATOR) + "_s_{} ".format(ZOOM_FACTOR) + ".png"
+                        output_path = DATAPOINTS_STRING + class_list[i] + \
+                        os_separator + class_list[i] + "_" + \
+                                      str(FRAME_ITERATOR) + "_s_{}".format(ZOOM_FACTOR).strip() + ".png"
                         while os.path.exists(output_path):
                             FRAME_ITERATOR += 1
-                            output_path = DATAPOINTS_STRING + class_list[i] + os_separator + class_list[i] + "_" + \
-                                          str(FRAME_ITERATOR) + "_s_{}".format(ZOOM_FACTOR) + ".png"
+                            output_path = DATAPOINTS_STRING + class_list[i] + \
+                            os_separator + class_list[i] + "_" + \
+                                          str(FRAME_ITERATOR) + "_s_{}".format(ZOOM_FACTOR).strip() + ".png"
 
                         # show crops on image
                         cv2.rectangle(image, (top_left_x, top_left_y), (bottom_right_x, bottom_right_y), color_list[i], 2)
