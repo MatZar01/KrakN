@@ -1,0 +1,2 @@
+This directory should contain the images you wish to classify.
+See the example uploaded image.
