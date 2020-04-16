@@ -129,6 +129,8 @@ For greater performance, Google Colab service can also be used.
 
 #### Examples below demonstrate classifications obtained using KrakN:
 
+<img src="https://i.ibb.co/8bL6B9G/out1.png" alt="drawing" width="640" height="230"/>
+
 ![](https://i.ibb.co/8bL6B9G/out1.png =640x230)
 >A fragment of KrakN output of concrete wall 120MP orthomosaic. Second image in row is the defect mask to use for damage management. On the last image, the defects are marked with bounding boxes. The width of defects is below 0,2mm.
 
