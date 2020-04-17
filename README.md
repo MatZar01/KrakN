@@ -112,7 +112,7 @@ This process can also be done with `extract_features.py` provided in `KrakN/netw
 
 After feature extraction, your dataset will be saved in `KrakN/network_trainer/database` as `features_s_<zoom factor>.hdf5` file.
 
-For fine crack/background detection database already extracted features can be downloaded from [project's Zenodo site.](https://zenodo.org/record/3755452)
+**For fine crack/background detection database already extracted features can be downloaded from [project's Zenodo site](https://zenodo.org/record/3755452).**
 
 ### 3. Network training
 
