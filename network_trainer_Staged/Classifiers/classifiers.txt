@@ -1,0 +1,4 @@
+In this folder you shoudl put your trained classifiers with names corresponding to the names of masked image files eg.:
+If in the initial stage spalling was detected and output files are named '*_spalling_mask.png', to implement detecting uncovered rebar,
+the classifier should be named 'spalling.cpickle'.
+There is no limitations to the number of classifiers in this directory.
