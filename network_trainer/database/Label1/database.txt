@@ -1,2 +1,0 @@
-'database' directory should contain folders named after the defects class you wish to classify.
-They can be copied directly from 'dataset_builder/datapoints' folder.
