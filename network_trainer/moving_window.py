@@ -5,6 +5,10 @@ try:
     from os import listdir
     from os.path import isfile, join
     import os
+
+    import warnings
+    warnings.simplefilter(action='ignore', category=FutureWarning)
+
     from keras.applications import VGG16
     from keras.preprocessing import image
     from keras.applications.vgg16 import preprocess_input
@@ -86,7 +90,7 @@ labels = []
 for label in labelsDb: labels.append(label)
 
 # load scale factor from database
-scale = float(databasePath.split('_')[-1].replace('.' + path.split('.')[-1], ''))
+scale = float(databasePath.split('_')[-1].replace('.' + databasePath.split('.')[-1], ''))
 
 # set tile window & step sizes
 overlap = 0.6
