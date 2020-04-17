@@ -86,7 +86,7 @@ labels = []
 for label in labelsDb: labels.append(label)
 
 # load scale factor from database
-scale = float(databasePath.split(os.path.sep)[-1].split('.')[0].split('_')[-1])
+scale = float(databasePath.split('_')[-1].replace('.' + path.split('.')[-1], ''))
 
 # set tile window & step sizes
 overlap = 0.6
