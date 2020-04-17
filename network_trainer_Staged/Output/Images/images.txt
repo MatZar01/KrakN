@@ -1,0 +1,1 @@
+Here, output images will be placed in the same way as with the initial stage classifier.
