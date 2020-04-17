@@ -1,0 +1,2 @@
+In this directory, you should put your raw images to classify.
+Note, that the images should be unclassified - this means the defects from the first stage should not be marked in the Image.
