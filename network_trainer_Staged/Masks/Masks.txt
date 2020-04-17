@@ -1,0 +1,1 @@
+In this directory you should put mask files from output of the previous stage.
