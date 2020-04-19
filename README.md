@@ -130,7 +130,10 @@ In order to train network run `train_model.py` or `train_model.exe`. It will aut
 **After training the model, points 1 to 3 will not have to be repeated unless you will need to add new classes to the classifier.** Trained models can also be shared across working stations.
 
 ### 4. Model deployment
+
 <img src="https://i.imgur.com/xV2GcHe.png" alt="drawing" width="200" height="170"/>
+
+#### Single stage classification
 
 In order to use your trained model, first insert images you want to classify to `KrakN/network_trainer/input` directory. Then use `moving_window.py` or `moving_window.exe` in `KrakN/network_trainer` directory to classify images.
 
@@ -139,6 +142,14 @@ KrakN will automatically load your images, database and trained model. It will t
 There are no limitations to the size of the images classified, so images as large as 120MP orthomosaic can be classified.
 
 For greater performance, Google Colab service can also be used.
+
+#### Subsequent stage classification
+
+KrakN also allows for multi stage classification, with `network_trainer_Staged` module.
+
+In order to do so, you have to train new classifiers using previously described methods. The classifiers should be renamed to match first stage of defect detection - eg. if second stage classification is meant to divide 'spalling' defect into subsets, classifier should be named 'spalling' accordingly as seen in the figure below. Next, place classifiers in `network_trainer_Staged/Classifiers` directory and insert previously classified images and masks to corresponding folders. Note, that image and classifier names should match. To classify the images, run `moving_window_staged.py`. You can use any number of images and classifiers at once. As the result, classified images will be saved in `network_trainer_Staged/Output` both as images and masks. Multi stage classification can be done repeatedly.
+
+<img src="https://i.imgur.com/ngLwPfm.jpg" alt="drawing" width="450" height="240"/>
 
 ## Use examples
 
