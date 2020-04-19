@@ -76,6 +76,8 @@ conda env create -f krakn.yml
 ## Usage
 
 ### 1. Dataset Building
+<img src="https://i.imgur.com/sKTRyBu.png" alt="drawing" width="200" height="150"/>
+
 In order to build dataset, first create directories with names corresponding to desired classifier classes in `KrakN/dataset_builder/datapoints`. Adding each new folder is equivalent in adding new class to the desired classifier. There can be total of 9 folders in `KrakN/dataset_builder/datapoints` per script run. Next add images you want to extract dataset from to `KrakN/dataset_builder/database/Images`. Finally, use `dataset_builder.py` or `dataset_builder.exe` in `KrakN/dataset_builder` to extract labeled datapoints from images.
 
 #### Datapoints extraction:
@@ -106,6 +108,7 @@ There is no limitation to the number of datapoints extracted from one image.
 Dataset classes should be balanced and consist of at least 500 datapoints per class.
 
 ### 2. Feature extraction
+<img src="https://i.imgur.com/YusYHOK.png" alt="drawing" width="200" height="150"/>
 
 In order to train your classifier, first you have to extract image features from your gathered dataset. Use `extract_features.py` or `extract_features.exe` in `KrakN/network_trainer` to begin extraction.
 
@@ -120,12 +123,14 @@ After feature extraction, your dataset will be saved in `KrakN/network_trainer/d
 **For fine crack/background detection database, already extracted features can be downloaded from [project's Zenodo site](https://zenodo.org/record/3755452).**
 
 ### 3. Network training
+<img src="https://i.imgur.com/hAUwoN5.png" alt="drawing" width="200" height="150"/>
 
 In order to train network run `train_model.py` or `train_model.exe`. It will automatically load your dataset if provided correctly and tune training hyperparameters. Total training time should not exceed 1 hour and the trained classifier will be saved as `KrakN_model.cpickle` in the `KrakN/network_trainer` directory.
 
 **After training the model, points 1 to 3 will not have to be repeated unless you will need to add new classes to the classifier.** Trained models can also be shared across working stations.
 
 ### 4. Model deployment
+<img src="https://i.imgur.com/xV2GcHe.png" alt="drawing" width="200" height="170"/>
 
 In order to use your trained model, first insert images you want to classify to `KrakN/network_trainer/input` directory. Then use `moving_window.py` or `moving_window.exe` in `KrakN/network_trainer` directory to classify images.
 
