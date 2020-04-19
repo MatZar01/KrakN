@@ -28,7 +28,7 @@ file_found = False
 feature_files_number = 0
 database_list_files = os.listdir(databasePath)
 for file_path in database_list_files:
-    if 'features' in file_path:
+    if 'features' in file_path and 'hdf5' in file_path:
         feature_files_number += 1
         databasePath += os.path.sep
         databasePath += file_path
