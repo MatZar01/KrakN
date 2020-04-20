@@ -1,0 +1,1 @@
+In this directory, examples of KrakN usage are provided for the case of thin crack detection on concrete surface.
