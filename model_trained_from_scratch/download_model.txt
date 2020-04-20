@@ -1,0 +1,2 @@
+Model trained from scratch can be downloaded from:
+https://drive.google.com/open?id=1oxkdp8sS2Blfomj6G3TQL7F0k3IuUVzg
