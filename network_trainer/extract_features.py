@@ -19,6 +19,7 @@ try:
     import numpy as np
     import progressbar
     import random
+    import sys
 except ImportError as e:
     print(e)
     print("One or more dependencies missing!\nOpen README file to check required dependencies.")
@@ -27,7 +28,7 @@ except ImportError as e:
               "dependencies.sh' command in KrakN directory.")
     else:
         print("\nYou can install all dependencies using install_dependencies.bat in KrakN directory")
-    quit()
+    sys.exit()
 
 # set/check dataset & output path, delete previous output if exists
 while True:
