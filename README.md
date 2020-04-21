@@ -33,8 +33,9 @@ Dataset builder enables semin-automatic construction of own datasets based on ph
 
 Defect Detector allows for training and deploying CNN classifiers on digital pictures in real-life working scenarios. It outputs immediate defect indicators for use during inspection as well as defect masks for further defect management when used on surface orthomosaic.
 
-KrakN can be used on desktopn as well as in cloud. It comes in two variants:
+KrakN can be used on desktop as well as in cloud. It comes in three variants:
 * Windows / Linux for dekstop use
+* Precompiled Windows version
 * Google Colab for cloud computing
 
 ## Dependencies
