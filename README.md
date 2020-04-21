@@ -75,7 +75,7 @@ conda env create -f krakn.yml
 
 #### Using precompiled `.exe` files
 
-If you are a Windows user, you can download precompiled executable files from [Zenodo software repository](https://zenodo.org/record/) and run them on your machine without any further installation (although you should keep the directory structure - KrakN will do it for you by adding folders in first run, but then again, first run would be disappointing).
+If you are a Windows user, you can download precompiled executable files from [Zenodo software repository](https://www.zenodo.org/record/3759845) and run them on your machine without any further installation (although you should keep the directory structure - KrakN will do it for you by adding folders in first run, but then again, first run would be disappointing).
 
 As KrakN uses command line as a form of communication with user, the preferred way of executing command is by typing eg. `dataset_builder.exe` in CMD or `.\dataset_builder.exe` in PowerShell opened in the `*.exe` directory. This way you will be albe to read any error messages if they occur. However it is also possible to run KrakN software with double click.
 
