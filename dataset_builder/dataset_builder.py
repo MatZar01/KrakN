@@ -8,6 +8,7 @@ try:
     import os
     import itertools
     import random
+	import sys
 except ImportError as e:
     print(e)
     print("One or more dependencies missing!\nOpen README file to check required dependencies.")
@@ -16,7 +17,7 @@ except ImportError as e:
               "dependencies.sh' command in KrakN directory.")
     else:
         print("\nYou can install all dependencies using install_dependencies.bat in KrakN directory")
-    quit()
+    sys.exit()
 
 # def 'on_trackbar' handlers to manage window position:
 def on_trackbar_horizontal(val):
@@ -92,7 +93,7 @@ if not os.path.exists(IMAGE_FILE_STRING):
     print("No database found, add images to ./database/Images directory")
     os.makedirs(IMAGE_FILE_STRING)
     os.makedirs(FILE_DONE_STRING)
-    quit()
+    sys.exit()
 
 # check output directory exist or make new Crops file
 class_list = os.listdir(DATAPOINTS_STRING)
@@ -103,7 +104,7 @@ if len(class_list) == 0:
 # check if classes extend 9 files
 if len(class_list) > 9:
     print("Too many classes in datapoints directory\nMax number of classes in single run is 9")
-    quit()
+    sys.exit()
 
 # leave only relevant KEYS and colors
 KEYS_IDS = KEYS_IDS[0:len(class_list)]
@@ -209,6 +210,6 @@ for path in imagePaths:
 
         # exit
         if key == 27:
-            quit()
+            sys.exit()
 
 print("All images done! Press ENTER to exit.")
