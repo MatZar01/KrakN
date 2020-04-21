@@ -7,6 +7,7 @@ try:
     import pickle
     import h5py
     import os
+    import sys
 except ImportError as e:
     print(e)
     print("One or more dependencies missing!\nOpen README file to check required dependencies.")
@@ -14,14 +15,14 @@ except ImportError as e:
         print("\nYou can install all dependencies using install_dependencies.sh")
     else:
         print("\nYou can install all dependencies using install_dependencies.bat")
-    quit()
+    sys.exit()
 
 # set&check paths for database & output
 databasePath = r".{}database".format(os.path.sep)
 if not os.path.exists(databasePath):
     os.mkdir(databasePath)
     print("Features file at {}\nDoes not exist!\nQuitting now".format(databasePath))
-    quit()
+    sys.exit()
 
 # search for features file
 file_found = False
@@ -35,10 +36,10 @@ for file_path in database_list_files:
         file_found = True
 if not file_found:
     print("Features file at {}\nDoes not exist!\nQuitting now".format(databasePath))
-    quit()
+    sys.exit()
 if feature_files_number != 1:
     print("There can be only 1 features file in database directory while there are {}\nRemove excessive files".format(feature_files_number))
-    quit()
+    sys.exit()
 
 modelPath = r'.{}KrakN_model.cpickle'.format(os.path.sep)
 if os.path.exists(modelPath):
