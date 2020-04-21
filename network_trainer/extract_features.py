@@ -51,9 +51,7 @@ random.shuffle(imagePaths)
 print("{} images loaded".format(len(imagePaths)))
 
 # get scale factor
-splitted = imagePaths[0].split('_')
-scale = splitted[-1]
-scale = scale[:-4]
+scale = float(imagePaths[0].replace('.' + imagePaths[0].split('.')[-1], '').split('_')[-1])
 
 # extract class labels and encode them
 labels = [p.split(os.path.sep)[-2] for p in imagePaths]
