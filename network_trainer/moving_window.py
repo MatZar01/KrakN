@@ -17,6 +17,7 @@ try:
     import numpy as np
     import cv2
     from imutils import paths
+    import sys
 except ImportError as e:
     print(e)
     print("One or more dependencies missing!\nOpen README file to check required dependencies.")
@@ -25,18 +26,18 @@ except ImportError as e:
               "dependencies.sh' command in KrakN directory.")
     else:
         print("\nYou can install all dependencies using install_dependencies.bat in KrakN directory")
-    quit()
+    sys.exit()
 
 # set input image path
 IMAGE_DIR = r'.{}input'.format(os.path.sep)
 if not os.path.exists(IMAGE_DIR):
     print("No input image provided!")
     os.mkdir(IMAGE_DIR)
-    quit()
+    sys.exit()
 imagePaths = list(paths.list_images(IMAGE_DIR))
 if len(imagePaths) == 0:
     print("No input image provided!")
-    quit()
+    sys.exit()
 
 # set the rest of paths
 modelPath = r'.{}KrakN_model.cpickle'.format(os.path.sep)
@@ -65,16 +66,16 @@ for file_path in database_list_files:
         file_found = True
 if not file_found:
     print("Features file at {}\nDoes not exist!\nQuitting now".format(databasePath))
-    quit()
+    sys.exit()
 if feature_files_number != 1:
     print("There can be only 1 features file in database directory while there are {}\nRemove excessive files".format(feature_files_number))
-    quit()
+    sys.exit()
 
 input_paths = [modelPath]
 for input_path in input_paths:
     if not os.path.exists(input_path):
         print("Path {} not found!\nQuitting now".format(input_path))
-        quit()
+        sys.exit()
 
 # set confidence threshold
 confidenceThreshold = 0.95
