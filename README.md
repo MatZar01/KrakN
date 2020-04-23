@@ -14,7 +14,7 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
+* [Dependencies](#dependencies)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Use examples](#use-examples)
