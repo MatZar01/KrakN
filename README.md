@@ -181,7 +181,7 @@ As seen in the examples KrakN performance may vary due to the dataset it was tra
 
 KrakN is associated with research paper:
 
-Mateusz Żarski<sup>[1](#footnote1)</sup>, Bartosz Wójcik<sup>[1](#footnote1)</sup>, Jarosław Adam Miszczak<sup>[2](#footnote2)</sup>, *Transfer Learning for leveraging the utilization of computer vision for infrastructure maintenance*, [ResearchGate link](https://researchgate.net) 
+Mateusz Żarski<sup>[1](#footnote1)</sup>, Bartosz Wójcik<sup>[1](#footnote1)</sup>, Jarosław Adam Miszczak<sup>[2](#footnote2)</sup>, *Transfer Learning for leveraging the utilization of computer vision for infrastructure maintenance*, arXiv:[2004.12337](https://arxiv.org/abs/2004.12337) 
 
 <a name="footnote1"><sup>1</sup></a>Department of Civil Engineering, Silesian University of Technology
 <a name="footnote2"><sup>2</sup></a>Institute of Theoretical and Applied Informatics, Polish Academy of Sciences
