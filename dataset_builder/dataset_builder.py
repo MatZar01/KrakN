@@ -65,6 +65,14 @@ WINDOW_NAME = "Dataset Builder"
 TRACKBAR_HORIZONTAL = "Navigate width"
 TRACKBAR_VERTICAL = "Navigate height"
 FRAME_COUNT = 3
+# set crop size
+while True:
+	try:
+		CROP_SIZE = int(input("Set crop size: "))
+		break
+	except:
+		print("Error, use integer number")
+		
 # set zoom factor
 while True:
 	try:
@@ -72,7 +80,7 @@ while True:
 		break
 	except:
 		print("Error, use '.' as decimal separator")
-FRAME_SIZE = int(224 // ZOOM_FACTOR)
+FRAME_SIZE = int(CROP_SIZE // ZOOM_FACTOR)
 HALF_SIZE = int(FRAME_SIZE // 2)
 os_separator = os.path.sep
 DATAPOINTS_STRING = r'.{}datapoints{}'.format(os_separator, os_separator)
