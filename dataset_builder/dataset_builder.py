@@ -68,7 +68,7 @@ FRAME_COUNT = 3
 # set crop size
 while True:
 	try:
-		CROP_SIZE = int(input("Set crop size: "))
+		CROP_SIZE = int(input("Set crop size: ") or "224")
 		break
 	except:
 		print("Error, use integer number")
@@ -76,7 +76,7 @@ while True:
 # set zoom factor
 while True:
 	try:
-		ZOOM_FACTOR = float(input("Set zoom factor: "))
+		ZOOM_FACTOR = float(input("Set zoom factor: ") or "1.0")
 		break
 	except:
 		print("Error, use '.' as decimal separator")
